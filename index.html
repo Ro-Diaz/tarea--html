@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="/reset.css" />
+    <link rel="stylesheet" href="estilo.css" />
+    
     <title>Document</title>
 </head>
 <body>
     <HEader>
-        <h1>BIBLIOTECA DE ROMI</h1>
+        <h1 class="title" id="principal">BIBLIOTECA DE ROMI</h1>
 
         <p>✨ Bienvenid@ a un espacio donde cada página te abraza ✨
             En nuestra librería, cada libro es una guía, una caricia al alma o un espejo donde poder mirarte con amor.
@@ -22,29 +24,52 @@
     </HEader>
 
     <main>
-        <img src="./LIBRO.jpg">
+  
+        <div class="cards">
+
+             <img src="./Portadas libros/LIBRO.jpg" class="imagenes">
+
+        </div>
         <section>
             <article>
 
-                <h2>DESARROLLO PERSONAL Y BIENESTAR EMOCIONAL </H2>
+                <h2 class="title">DESARROLLO PERSONAL Y BIENESTAR EMOCIONAL </H2>
                 <div>
                 <h3>Titulos de los libros</h3>
 
-                <ol>
-                    <li>50 capsulas de amor propio</li>
-                    <li>Ansiosamente</li>
-                    <li>El poder de las palabras</li>
-                    <li>Escuchate</li>
-                    <li>Encuentra tu persona vitamina</li>
-                    <li>Nada es tan terrible</li>
-                </ol>
+             <div id="cards-container">
+                
+                 <div class="cards">
+                     <h4 class="Titulos">50 Capsulas de amor propio</h4>
+                    <img src="./Portadas libros/50 capsulas.jpg" class="imagenes" />
+                 </div>    
+
+                 <div class="cards">
+                    <h4 class="Titulos"> Ansiosamente</h4>
+                    <img src="./Portadas libros/ansiosamente.jpg" class="imagenes" />
+                 </div>
+
+                <div class="cards">
+                    <h4 class="Titulos">Encuentra tu persona vitamina </h4>
+                    <img src="./Portadas libros/uno siempre.jpg" class="imagenes" />
+                </div>
+
+            </div>
+
+                
+               
+                    <ol>
+                      <li>El poder de las palabras</li>
+                      <li>Escuchate</li>   
+                      <li>Nada es tan terrible</li>
+                     </ol>
                 </div>
 
             </article><hr />
 
             <article>
 
-            <h2>PSICOLOGIA Y NEUROCIENCIAS</h2>
+            <h2 class="title">PSICOLOGIA Y NEUROCIENCIAS</h2>
             <H3>Titulos</H3>
 
             <ul>
@@ -58,7 +83,7 @@
 
             <article>
 
-                <h2>RELACIONES, EMOCIONES Y HERIDAS </h2>
+                <h2 class="title">RELACIONES, EMOCIONES Y HERIDAS </h2>
                 <H3>Titulos</H3>
 
                 <UL>

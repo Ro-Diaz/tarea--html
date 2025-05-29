@@ -1,0 +1,88 @@
+/* reset.css */
+/* Eliminación de márgenes, paddings y bordes por defecto */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Herencia de fuentes por defecto */
+html {
+  font-size: 100%;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Elementos multimedia sin bordes ni espacios */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Quitar decoración de enlaces */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Quitar estilos a listas */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Botones e inputs básicos sin bordes ni estilos */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  border: none;
+  outline: none;
+  background: none;
+  color: inherit;
+}
+
+/* Tablas sin bordes */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Quitar estilo de quotes */
+blockquote,
+q {
+  quotes: none;
+}
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+}
+
+/* Formularios sin autofill background en algunos navegadores */
+input:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px white inset;
+}
+
+/* Focus visible para accesibilidad */
+:focus-visible {
+  outline: 2px solid blue;
+  outline-offset: 2px;
+}

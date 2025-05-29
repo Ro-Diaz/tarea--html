@@ -1,0 +1,63 @@
+body{
+    background-color: khaki;
+}
+
+.title{
+    font-size: 2.2em;  /*em parecido a px*/
+    color: coral; 
+}
+
+.Titulos{
+    font-size: 1.8em;
+}
+
+.cards{
+  border: 2px solid black;
+  width: fit-content;  /* fit-content se aguata al ancho del contenido /imagen*/
+  padding: 1em 1em 1em 1em;
+  border-radius: 12%;
+  transition: 1s;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+}
+
+.cards:hover{
+    background-color: rgb(233, 168, 125);
+}
+
+#principal{
+    font-size: 4em;
+    border: 2px solid black;     /*border=encuadra lo seleciodado*/ /*solid tipo de encuadracion(ej, linea,puntos etc)*/
+    width: 50vw; /*encuadra el porcentaje que le pongamos con en vw*/
+    margin: auto;
+    padding: 1em;
+}
+
+.imagenes {
+  width: 200px;   /* Ancho deseado */
+  height: 200px;  /* Alto deseado */
+  object-fit: cover; /* Ajusta el recorte para que no se deforme */
+  border-radius: 12%; /*redondea el contenido selecionado/ imagen*/
+
+}
+
+.imagenes:hover{
+    border-radius: 19%
+    
+}
+
+#cards-container{
+   
+    width: 80vw;
+    margin: auto;
+   margin-top: 1.5em;  /*top hace que se despeguen los elementos*/
+   border: 3px solid rgb(214, 135, 135);
+   border-radius: 15px;
+   padding: 2em;
+   display: flex;  /*pone los elementos en columnas*/
+   flex-direction: row;
+   justify-content: space-evenly; /*los elementos de separan de igual espacios*/
+   
+}
